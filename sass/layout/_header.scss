@@ -1,0 +1,60 @@
+.list {
+    display: flex;
+    & .item:not(:last-child) {
+        margin-right: 50px;
+    }
+  }
+.main-nav {
+    display: flex;
+    align-items: center;
+  }
+.list-contact {
+    margin-left: auto;
+  }
+.nav {
+    border-bottom: 1px solid $color-border;
+  }
+  .nav-list {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $black-title;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    position: relative;
+  
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+  }
+  .nav-icon {
+    display: flex;
+    align-items: center;
+  }
+  .icon-phone,
+  .icon-mail {
+    margin-right: 10px;
+    fill: currentColor;
+    vertical-align: middle;
+  }
+
+  .current {
+    color: $blue;
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      left: 0px;
+      bottom: 1px;
+      background: $blue;
+      border-radius: 2px;
+      opacity: 1;
+    }
+  }
+  

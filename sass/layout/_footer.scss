@@ -1,0 +1,134 @@
+.footer {
+    background-color: $bg-black;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .footer-flex {
+    flex-direction: column;
+
+    & .footer-item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+  }
+  
+  .address {
+    font-style: normal;
+    margin-top: 20px;
+  }
+  .footer-nav {
+    color: $white;
+    line-height: 1.71;
+    text-decoration: none;
+  
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+    color: $blue;
+    }
+  }
+  
+  .join-title {
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  .footer-list {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+  }
+  .footer-join-list {
+    max-width: 206px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .join-icon {
+    color: $white;
+    background: rgba(255, 255, 255, 0.1);
+  
+    transition: background-color 250ms $timing-function;
+  }
+  .footer-form{
+    margin-right: auto;
+  }
+  .form-footer{
+    display: flex;
+    align-items: center;
+  }
+  .footer-form-title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 20px;
+  }
+  
+  .form-footer-input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    background-color: $bg-black;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 12px;
+    color: rgba(255, 255, 255, 0.6);
+  
+    transition: outline 250ms $timing-function;
+
+    &:focus{
+        outline: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    &::placeholder{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  
+  
+  
+  .form-footer-btn {
+    width: 200px;
+    height: 50px;
+    padding: 10px 8px 10px 28px;
+    background: $blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    outline: 2px solid $blue;
+    outline-offset: -2px;
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+
+    &:focus,
+    &:hover{
+      cursor: pointer; 
+    }
+  }
+
+  .form-footer-label{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: $white;
+    margin-right: 10px;
+  }
+  .footer-form-icon{
+    width: 24px;
+    height: 24px;
+  }
