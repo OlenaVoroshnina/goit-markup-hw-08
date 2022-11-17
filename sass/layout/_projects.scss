@@ -1,9 +1,18 @@
+.projects{
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    
+  }
+}
+
 .projects {
     padding-top: 0;
   }
   .projects__list {
     flex-wrap: wrap;
     gap: 30px;
+    display: flex;
   }
   
   .projects__image {

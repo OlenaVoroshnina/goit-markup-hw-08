@@ -2,17 +2,28 @@
     background: $bg-white;
   }
   .flex-content {
+    display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
   .team-title {
     color: $black-title;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
   }
-  
+  .team-img{
+
+    width: 100%;
+    
+   
+  }
   .team-name {
     line-height: 1.19;
     margin-bottom: 10px;
@@ -20,7 +31,11 @@
   }
   .team-card {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 30px;
+    } 
   }
   .team-job {
     font-size: 16px;
@@ -28,22 +43,29 @@
     text-align: center;
     margin-bottom: 16px;
   }
-  .team-border {
+  .team-item {
     background-color: $white;
-    
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: 780px) {
+      flex-basis: calc((100% - 1 * 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 3 * 30px) / 4);
+    } 
   }
   .team-list {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     gap: 10px;
   }
-  .team-item {
+  .team-item-icon {
     color: $icon-color;
   }
   .team-icon {
