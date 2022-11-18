@@ -20,10 +20,10 @@
     
   </head>
   <body>
-    <!-- <header class="nav">
+    <header class="nav">
       <div class="container main-nav">
         <a class="nav-logo logo-top" href="/"><span class="logo">Web</span>Studio</a>
-        <nav>
+        <nav class="navigation">
           <ul class="list">
             <li class="item"><a class="nav-list current" href="">Студія</a></li>
             <li class="item"><a class="nav-list" href="./portfolio.html">Портфоліо</a></li>
@@ -49,7 +49,13 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <button class="mobil-btn" type="button">
+        <svg width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-menu">
+          </use>
+        </svg>
+      </button>
+    </header>
     <main>
       <section class="hero">
         <div class="hero__image">
@@ -116,7 +122,13 @@
           <ul class="list projects__list">
             <li class="projects__item">
               <div class="projects__image">
-                <img src="./images/box1.jpg" alt="Development" width="370" height="294" />
+                <img 
+                srcset="./images/activity/activity-1-1x.jpg 370w, ./images/activity/activity-1-2x.jpg 740w"
+                src="./images/activity/activity-1-1x.jpg"
+                sizes="(min-width: 1200px) 370px, 100vw"
+                alt="Development" 
+                width="370" 
+                height="294" />
                 <div class="projects__block">
                   <h3 class="projects__description">Десктопні додатки</h3>
                 </div>
@@ -124,7 +136,14 @@
             </li>
             <li class="projects__item">
               <div class="projects__image">
-                <img src="./images/box2.jpg" alt="Advice" width="370" height="294" />
+                <img
+                srcset="./images/activity/activity-2-1x.jpg 370w, ./images/activity/activity-2-2x.jpg 740w"
+                src="./images/activity/activity-2-1x.jpg"
+                sizes="(min-width: 1200px) 370px, 100vw"
+                alt="Development" 
+                width="370" 
+                height="294"
+                alt="Advice"/>
                 <div class="projects__block">
                   <h3 class="projects__description">Мобільні додатки</h3>
                 </div>
@@ -132,7 +151,14 @@
             </li>
             <li class="projects__item">
               <div class="projects__image">
-                <img src="./images/box3.jpg" alt="Project" width="370" height="294" />
+                <img 
+                srcset="./images/activity/activity-3-1x.jpg 370w, ./images/activity/activity-3-2x.jpg 740w"
+                src="./images/activity/activity-3-1x.jpg"
+                sizes="(min-width: 1200px) 370px, 100vw"
+                alt="Development" 
+                width="370" 
+                height="294"
+                alt="Project"/>
                 <div class="projects__block">
                   <h3 class="projects__description">Дизайнерські рішення</h3>
                 </div>
@@ -146,7 +172,13 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="list flex-content">
             <li class="team-item">
-              <img class="team-img" src="./images/team1.jpg" alt="Ігор Дем'яненко" />
+              <img 
+              srcset="./images/team-1/igor-mobil-1x.jpg 450w, ./images/team-1/igor-mobil-2x.jpg 900w, ./images/team-1/igor-tablet-1x.jpg 354w, ./images/team-1/igor-tablet-2x.jpg 708w, ./images/team-1/igor-desktop-1x.jpg 270w, ./images/team-1/igor-desktop-2x.jpg 540w"
+              src="./images/team-1/igor-mobil-1x.jpg"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              width="450"
+              height="460"
+              class="team-img"  alt="Ігор Дем'яненко" />
               <div class="team-card">
                 <h3 class="team-name tip">Ігор Дем'яненко</h3>
                 <p class="team-job">Product Designer</p>
@@ -183,7 +215,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img class="team-img" src="./images/team2.jpg" alt="Ольга Рєпіна" />
+              <img class="team-img" alt="Ольга Рєпіна"
+              srcset="./images/team-2/2photo1px-mob.jpg 450w, ./images/team-2/2photo2px-mob.jpg 900w, ./images/team-2/2photo1px-tab.jpg 354w, ./images/team-2/2photo2px-tab.jpg 708w, ./images/team-2/2photo-desktop-1x.jpg 270w, ./images/team-2\2photo-desktop-2x.jpg 540w"
+              src="./images/team-2/2photo1px-mob.jpg"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              width="450"
+              height="460" />
               <div class="team-card">
                 <h3 class="team-name tip">Ольга Рєпіна</h3>
                 <p class="team-job">Frontend Developer</p>
@@ -220,7 +257,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img class="team-img" src="./images/team3.jpg" alt="Микола Тарасов" />
+              <img class="team-img" alt="Микола Тарасов"
+              srcset="./images/team-3/3photo1px-mob.jpg 450w, ./images/team-3/3photo2px-mob.jpg 900w, ./images/team-3/3photo1px-tab.jpg 354w, ./images/team-3/3photo2px-tab.jpg 708w, ./images/team-3/3photo-desktop-1x.jpg 270w, ./images/team-3/3photo-desktop-2x.jpg 540w"
+              src="./images/team-3/3photo1px-mob.jpg"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              width="450"
+              height="460" />
               <div class="team-card">
                 <h3 class="team-name tip">Микола Тарасов</h3>
                 <p class="team-job">Marketing</p>
@@ -257,7 +299,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img class="team-img" src="./images/team4.jpg" alt="Михайло Єрмаков" />
+              <img class="team-img" alt="Михайло Єрмаков"
+              srcset="./images/team-4/4photo1px-mob.jpg 450w, ./images/team-4/4photo2px-mob.jpg 900w, ./images/team-4/4photo1px-tab.jpg 354w, ./images/team-4/4photo2px-tab.jpg 708w, ./images/team-4/4photo-desktop-1x.jpg 270w, ./images/team-4/4photo-desktop-2x.jpg 540w"
+              src="./images/team-4/4photo1px-mob.jpg"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              width="450"
+              height="460" />
               <div class="team-card">
                 <h3 class="team-name tip">Михайло Єрмаков</h3>
                 <p class="team-job">UI Designer</p>
@@ -346,7 +393,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-list">
         <div class="footer-content">
           <a class="nav-logo" href="/"
@@ -414,7 +461,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
