@@ -1,8 +1,11 @@
 .list {
     display: flex;
-    & .item:not(:last-child) {
+    @media screen and (min-width: 1200px) {
+      & .item:not(:last-child) {
         margin-right: 50px;
     }
+    }
+    
   }
 .main-nav {
     display: flex;
@@ -21,23 +24,35 @@
 
   }
 .list-contact {
-  opacity: 0;
+  
   margin-left: auto;
 
+  @media screen and (max-width: 779px) {  
+    display: none;
+}  
+  @media screen and (max-width: 1199px) {   
+    margin-left: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }  
+
   @media screen and (min-width: 1200px) {
-      opacity: 1;
       margin-left: auto;
   }     
 }
   .navigation{
-    opacity: 0;
-    @media screen and (min-width: 1200px) {
-      opacity: 1;
-    } 
+    @media screen and (max-width: 779px) {  
+      display: none;
+    }   
   }
   .nav {
     position: relative;
     border-bottom: 1px solid $color-border;
+  }
+  .nav-item{
+    @media screen and (max-width: 1199px) {  
+      gap: 50px;
+  }   
   }
   .nav-list {
     padding-top: 32px;
@@ -56,15 +71,69 @@
       color: $blue;
     }
   }
-  .nav-icon {
-    display: flex;
-    align-items: center;
+  .nav-list-contacts{
+    color: $black-title;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.17;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    position: relative;
+  
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      font-size: 14px;
+      line-height: 1.14;
+    } 
   }
-  .icon-phone,
-  .icon-mail {
-    margin-right: 10px;
+
+  .nav-icon {
+    @media screen and (max-width: 1199px) {
+      &:not(:last-child){
+        margin-bottom: 10px;
+      }
+    } 
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+    } 
+    
+  }
+  .icon-phone{
+    width: 10px;
+    height: 14px;
+    margin-right: 8px;
     fill: currentColor;
     vertical-align: middle;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+      height: 16px;
+    } 
+    
+
+  }
+  .icon-mail {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+    fill: currentColor;
+    vertical-align: middle;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+      width: 16px;
+      height: 12px;
+    }
   }
 
   .current {
@@ -82,10 +151,122 @@
       opacity: 1;
     }
   }
-  .mobil-btn{
+  .menu-open{
     background-color: transparent;
     border: none;
-    top: 0;
+    padding: 0;
+    margin-left: auto;
+
+    @media screen and (min-width: 780px) {
+      display: none;
+    } 
+  }
+  .menu-close{
     position: absolute;
-    right: 0%;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+
+    &:hover,
+    &:focus{
+      fill: $blue;
+      cursor: pointer;
+    }
+    
+    
+  }
+  .mobil-menu {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $white;
+    z-index: 1;
+    padding: 48px 40px;
+    
+  }
+  .mobil-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow: auto;
+  }
+  .mobil-menu-top{
+    margin-bottom: 306px;
+  }
+  
+  .mobil-list {
+    display: block;
+  }
+  
+  .mobil-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mobil-nav-list {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $black-title;
+
+    &:hover,
+    &:focus{
+      color: $blue;
+    }
+  }
+  
+  .mobil-contact {
+    display: block;
+    margin-bottom: 64px;
+  }
+  .mobil-phone {
+    margin-bottom: 32px;
+  }
+  .mobil-phone-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    text-decoration: none;
+    &:hover,
+    &:focus{
+      color: $blue;
+    }
+  }
+  
+  
+  .mobil-email-link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    &:hover,
+    &:focus{
+      color: $blue;
+    }
+  }
+  
+  .mobil-social-item {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  .mobil-social-link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $blue;
+    
   }

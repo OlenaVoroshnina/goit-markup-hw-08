@@ -24,7 +24,7 @@
       <div class="container main-nav">
         <a class="nav-logo logo-top" href="/"><span class="logo">Web</span>Studio</a>
         <nav class="navigation">
-          <ul class="list">
+          <ul class="list nav-item">
             <li class="item"><a class="nav-list current" href="">Студія</a></li>
             <li class="item"><a class="nav-list" href="./portfolio.html">Портфоліо</a></li>
             <li class="item"><a class="nav-list" href="">Контакти</a></li>
@@ -32,29 +32,68 @@
         </nav>
         <ul class="list list-contact">
           <li class="item nav-icon">
-            <a class="nav-list tint" href="mailto:info@devstudio.com">
-              <svg class="icon-mail" width="16" height="12">
+            <a class="nav-list-contacts tint" href="mailto:info@devstudio.com">
+              <svg class="icon-mail">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="item nav-icon">
-            <a class="nav-list tint nav-icon" href="tel:+380961111111">
-              <svg class="icon-phone" width="10" height="16">
+            <a class="nav-list-contacts tint nav-icon" href="tel:+380961111111">
+              <svg class="icon-phone">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
+        <button class="menu-open" type="button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu">
+            </use>
+          </svg>
+        </button>
       </div>
-      <button class="mobil-btn" type="button">
-        <svg width="40" height="40">
-          <use href="./images/symbol-defs.svg#icon-menu">
-          </use>
-        </svg>
-      </button>
+      <div class="mobil-menu is-hidden" data-menu>
+        <button class="menu-close" type="button" data-menu-close>
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close-40">
+            </use>
+          </svg>
+        </button>
+        <div class="mobil-content">
+          <div class="mobil-menu-top">
+            <nav class="mobil-nav">
+              <ul class="mobil-list list">
+                <li class="mobil-item"><a class="mobil-nav-list" href="">Студія</a></li>
+                <li class="mobil-item"><a class="mobil-nav-list" href="./portfolio.html">Портфоліо</a></li>
+                <li class="mobil-item"><a class="mobil-nav-list" href="">Контакти</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mobil-menu-bottom">
+            <ul class="list mobil-contact">
+              <li class="mobil-phone">
+                <a class="mobil-phone-link " href="tel:+380961111111">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mobil-email">
+                <a class="mobil-email-link tint" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>  
+            <ul class="list mobil-social-list">
+              <li class="mobil-social-item" ><a class="mobil-social-link" href="">Instagram</a></li>
+              <li class="mobil-social-item"><a class="mobil-social-link" href="">Twitter</a></li>
+              <li class="mobil-social-item"><a class="mobil-social-link" href="">Facebook</a></li>
+              <li class="mobil-social-item"><a class="mobil-social-link" href="">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -67,7 +106,7 @@
       </section>
       <section class="section benefits">
         <div class="container">
-          <h2 class="visually-hidden">Наше кредо</h2>
+          <h2 class="is-hidden">Наше кредо</h2>
           <ul class= "list benefits__list">
             <li class="benefits__item">
               <div class="benefits__block">
@@ -128,7 +167,7 @@
                 sizes="(min-width: 1200px) 370px, 100vw"
                 alt="Development" 
                 width="370" 
-                height="294" />
+                height="294"/>
                 <div class="projects__block">
                   <h3 class="projects__description">Десктопні додатки</h3>
                 </div>
@@ -142,8 +181,7 @@
                 sizes="(min-width: 1200px) 370px, 100vw"
                 alt="Development" 
                 width="370" 
-                height="294"
-                alt="Advice"/>
+                height="294"/>
                 <div class="projects__block">
                   <h3 class="projects__description">Мобільні додатки</h3>
                 </div>
@@ -157,8 +195,7 @@
                 sizes="(min-width: 1200px) 370px, 100vw"
                 alt="Development" 
                 width="370" 
-                height="294"
-                alt="Project"/>
+                height="294"/>
                 <div class="projects__block">
                   <h3 class="projects__description">Дизайнерські рішення</h3>
                 </div>
@@ -216,7 +253,7 @@
             </li>
             <li class="team-item">
               <img class="team-img" alt="Ольга Рєпіна"
-              srcset="./images/team-2/2photo1px-mob.jpg 450w, ./images/team-2/2photo2px-mob.jpg 900w, ./images/team-2/2photo1px-tab.jpg 354w, ./images/team-2/2photo2px-tab.jpg 708w, ./images/team-2/2photo-desktop-1x.jpg 270w, ./images/team-2\2photo-desktop-2x.jpg 540w"
+              srcset="./images/team-2/2photo1px-mob.jpg 450w, ./images/team-2/2photo2px-mob.jpg 900w, ./images/team-2/2photo1px-tab.jpg 354w, ./images/team-2/2photo2px-tab.jpg 708w, ./images/team-2/2photo-desktop-1x.jpg 270w, ./images/team-2/2photo-desktop-2x.jpg 540w"
               src="./images/team-2/2photo1px-mob.jpg"
               sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
               width="450"
@@ -462,7 +499,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
           <svg class="modal-icon">
@@ -499,7 +536,7 @@
           </label>
 
           <label class="checkbox-field">
-            <input type="checkbox" name="checkbox" class="checkbox-input visually-hidden" />
+            <input type="checkbox" name="checkbox" class="checkbox-input is-hidden" />
             <span class="checkbox-icon"></span>
             <span class="checkbox-label"
               >Погоджуюся з розсилкою та приймаю
@@ -512,5 +549,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
-</html> -->
+</html>
