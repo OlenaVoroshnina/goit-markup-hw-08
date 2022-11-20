@@ -533,15 +533,6 @@ body {
   }
 }
 
-.projects {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .projects {
-    display: block;
-  }
-}
-
 .projects__list {
   flex-wrap: wrap;
   gap: 30px;
@@ -1324,5 +1315,11 @@ body {
 }
 
 .section-second {
-  padding-top: 0;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section-second {
+    display: block;
+    padding-top: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
