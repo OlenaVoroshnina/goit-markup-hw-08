@@ -533,6 +533,16 @@ body {
   }
 }
 
+.projects {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .projects {
+    display: block;
+    padding-top: 0;
+  }
+}
+
 .projects__list {
   flex-wrap: wrap;
   gap: 30px;
