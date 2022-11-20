@@ -248,7 +248,7 @@ img {
 }
 
 .mobil-menu-top {
-  margin-bottom: 306px;
+  margin-bottom: auto;
 }
 
 .mobil-list {
@@ -288,7 +288,7 @@ img {
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #2196f3;
   text-decoration: none;
 }
 .mobil-phone-link:hover, .mobil-phone-link:focus {
@@ -540,10 +540,6 @@ body {
   .projects {
     display: block;
   }
-}
-
-.projects {
-  padding-top: 0;
 }
 
 .projects__list {
@@ -854,7 +850,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-content {
     text-align: center;
   }
@@ -937,7 +933,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-form {
-    margin-right: auto;
+    margin-left: auto;
     align-items: flex-start;
   }
 }
@@ -1325,4 +1321,8 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.section-second {
+  padding-top: 0;
 }/*# sourceMappingURL=main.css.map */
